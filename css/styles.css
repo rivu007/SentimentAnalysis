@@ -1,0 +1,348 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,h1,h2,h3,h4,h5,h6,ul,li,div,span{
+	margin:0;
+	padding:0;
+	}
+	
+img{
+	border:0;
+	}
+	
+body{
+	text-align:center;
+	font-size:100%;
+	background:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+	}
+	
+.clear{
+	clear:both;
+	}
+	
+.fullWidth{
+	width:100%;
+	}
+	
+.floatLft{
+	float:left;
+	}
+	
+.floatRt{
+	float:right;
+	}
+	
+.clearfix:before, .clearfix:after {
+	content: "\200B";    
+	display: block;
+	height: 0;    
+	visibility: hidden;	
+	}
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; } /* IE 6 & 7, fixes hasLayout problem */
+	
+#wrapper{
+	margin:20px auto;
+	width:915px;
+	position:relative;
+	}
+	
+.topLftCorner{
+	background:url(../image/lftCorner.jpg) no-repeat;
+	width:20px;
+	height:158px;
+	float:left;
+	}
+	
+.topMidbg{
+	background:url(../image/bgMid.jpg) repeat-x;
+	height:158px;
+	width:875px;
+	float:left;
+	}
+	
+.topRtCorner{
+	background:url(../image/rtCorner.jpg) no-repeat;
+	width:20px;
+	height:158px;
+	float:left;
+	}
+	
+.heading h4{
+	font:bold 14px Arial, Helvetica, sans-serif;
+	color:#616264;
+	text-align:left;
+	margin:25px 0 0 240px;
+	}
+	
+.txt1{
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color:#616264;
+	text-align:justify;
+	margin:8px 0 0 240px;
+	}
+	
+.brdCrumb{
+	position:absolute;
+	left:30px;
+	top:140px;
+	}
+	
+.greyBg{
+	background:url(../image/bgPattern.jpg) repeat;
+	border-left:1px solid #efefef;
+	border-right:1px solid #efefef;
+	height:420px;
+	}
+	
+.lftCrnrBot{
+	background:url(../image/lftCornerBot.jpg) no-repeat;
+	width:20px;
+	height:35px;
+	float:left;
+	}
+	
+.botMidbg{
+	background:url(../image/midBgbot.jpg) repeat-x;
+	height:35px;
+	width:875px;
+	float:left;
+	}
+	
+.rtCrnrBot{
+	background:url(../image/rtCornerBot.jpg) no-repeat;
+	width:20px;
+	height:35px;
+	float:left;
+	}
+	
+.iconContainer{
+	background:#fff;
+	border:1px solid #d3d3d5;
+	padding:20px;
+	width:842px;
+	position:absolute;
+	top:200px;
+	height:auto;
+	left:15px;
+	right:15px;
+	}
+	
+.iconAlign{
+	float:left;
+	margin:0 35px 0 12px;
+	}
+	
+.chkBox{
+	float:left;
+	margin-top:10px;
+	}
+	
+	
+/*========================Modal Styles Start=============================*/
+
+#mask {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:9000;
+	background-color:#000;
+	display:none;
+	}
+  
+#boxes .window {
+	position:fixed;
+	left:0;
+	top:0;
+	display:none;
+	z-index:9999;
+	padding:20px;
+	}
+
+#boxes #dialog {
+	width:640px;
+	height:580px;
+	padding:10px;
+	/* background-color:#fafafa; */
+	background-color:#ffffff;
+	border:2px solid #461f00;
+	box-shadow: 2px 2px 2px #461f00;
+	-moz-box-shadow: 2px 2px 2px #461f00;
+	-webkit-box-shadow: 2px 2px 2px #461f00;
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	behavior: url(css/PIE.htc);
+	}
+	
+.divContainer{
+	width:100%;
+	height:auto;
+	padding:18px 0 10px 0;
+	border-bottom:1px solid #e8e8e8;
+	float:left;
+	}
+	
+.iconCont{
+	float:left;
+	padding:0 10px 0 10px;
+	}
+	
+.txtCont{
+	width:85%;
+	float:left;
+	}
+	
+.heading1{
+	font:bold 14px Arial, Helvetica, sans-serif;
+	color:#616264;
+	text-align:left;
+	float:left;
+	text-transform:uppercase;
+	}
+	
+.heading2{
+	font:bold 14px Arial, Helvetica, sans-serif;
+	color:#616264;
+	text-align:left;
+	text-transform:uppercase;
+	padding-left:25px;
+	}
+	
+.txt2{
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color:#616264;
+	text-align:justify;
+	padding-top:5px;
+	float:left;
+	clear:left;
+	}
+	
+.txt3{
+	font:normal 13px Arial, Helvetica, sans-serif;
+	color:#616264;
+	text-align:left;
+	padding-left:25px;
+	margin:15px 0 15px 0;
+	}
+	
+.txt4{
+	font:normal 13px Arial, Helvetica, sans-serif;
+	color:#616264;
+	text-align:left;
+	margin:0 0 15px 0;
+	border-bottom:1px solid #d3d3d5;
+	padding-bottom:4px;
+	}
+	
+.txt5{
+	font:normal 13px/30px Arial, Helvetica, sans-serif;
+	color:#616264;
+	text-align:left;
+	padding-left:25px;
+	}
+	
+.txt6{
+	font:normal 12px/18px Arial, Helvetica, sans-serif;
+	color:#616264;
+	text-align:left;
+	padding-left:25px;
+	padding-right:25px;
+	}
+		
+.divScroll{
+	height:430px;
+	overflow:auto;
+	clear:both;
+	float:left;
+	margin-top:15px;
+	width:100%;
+	overflow-x:hidden;
+	}
+	
+.buttonBg,.back{
+	background:url(../image/buttonBg.png) no-repeat;
+	width:147px;
+	height:41px;
+	text-align:center;
+	font:normal 18px Arial, Helvetica, sans-serif;
+	color:#6e4419;
+	display:inline-block;
+	padding-top:10px;
+	cursor:pointer;
+	}
+	
+.txtCont1{
+	width:50%;
+	float:left;
+	margin-top:20px;
+	}
+	
+.listStyle{
+	font:normal 13px/20px Arial, Helvetica, sans-serif;
+	color:#616264;
+	text-align:left;
+	list-style-type:square;
+	}
+	
+.listCont{
+	background:#fff;
+	border:1px solid #d3d3d5;
+	float:left;
+	width:99%;
+	margin-top:15px;
+	}
+	
+.inputTxt{
+	background:#fff;
+	border:1px solid #d3d3d5;
+	padding:4px;
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color:#616264;
+	}
+	
+.currentDiv{
+	display:block;
+	}
+
+.hideDiv{
+	display:none;
+	}
+	
+.twitTxt1{
+	font:normal 12px/20px Arial, Helvetica, sans-serif;
+	color:#616264;
+	text-align:left;
+	padding:3px 0 3px 5px;
+	vertical-align:top;
+	}
+	
+.twitTxt2{
+	font:normal 12px/20px Arial, Helvetica, sans-serif;
+	color:#616264;
+	text-align:left;
+	padding:3px 3px 3px 25px;
+	vertical-align:top;
+	}
+	
+.tableBrdr{
+	border:1px solid #d3d3d5;
+	}
+	
+.spanTxt{
+	background:#FFFF33;
+	border:1px solid #FF0000;
+	padding:0 5px 0 5px;
+	}
+	
+.tweetHeading{
+	font:bold 13px Arial, Helvetica, sans-serif;
+	color:#616264;
+	text-align:left;
+	margin:45px 0 0 6px;
+	}
+	
+/*========================Modal Styles End=============================*/

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>SentimentAnalysis_Web</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>MRService</display-name>
+    <servlet-name>MRService</servlet-name>
+    <servlet-class>org.rssoftware.sentiment.servlet.MRService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MRService</servlet-name>
+    <url-pattern>/MRService</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ReportServlet</display-name>
+    <servlet-name>ReportServlet</servlet-name>
+    <servlet-class>org.rssoftware.sentiment.servlet.ReportServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReportServlet</servlet-name>
+    <url-pattern>/ReportServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CleanUpServlet</display-name>
+    <servlet-name>CleanUpServlet</servlet-name>
+    <servlet-class>org.rssoftware.sentiment.servlet.CleanUpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CleanUpServlet</servlet-name>
+    <url-pattern>/CleanUpServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
